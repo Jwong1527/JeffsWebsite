@@ -1,2 +1,2 @@
-# JeffsWebsite
-My portfolio
+# JeffreyWong.com
+My portfolio 

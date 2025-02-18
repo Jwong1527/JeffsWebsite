@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeffrey Wong | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">JeffreyWong.com</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+      <div id="socials-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="window.open('https://www.linkedin.com/in/jeffrey-wong1215/', '_blank')"
+        />
+        <img
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="window.open('https://github.com/Jwong1527', '_blank')"
+        />
+      </div>
+        
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/jeffreywongpfp.jpg" alt="Jeffrey Wong profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jeffrey Wong</h1>
+        <p class="section__text__p2">A Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf', '_blank')"
+          >
+            Resume
+          </button>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container" style="display: flex; justify-content: center; align-items: flex-start; gap: 2rem; flex-wrap: wrap; max-width: 900px; margin: 0 auto;">
+          <div class="details-container" style="flex: 1; min-width: 300px; max-width: 400px;">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2+ years <br />Full Stack Development</p>
+            <p>Math Tutor at Logos Community Church</p>
+            <p>Mentored a class of 15 students, teaching them SAT math concepts.</p>
+            <p>Responsible for students throughout the day and attended weekly meetings to create lesson plans for their success.</p>
+            <p>I enjoy staying active through lifting and playing basketball. I also love exploring different restaurants and trying new foods. Outside of work, I play the piano, which helps me unwind and stay motivated.</p>
+          </div>
+          <div class="details-container" style="flex: 1; min-width: 400px; max-width: 600px;">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.S Computer Science<br />University at Buffalo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Recent Work</p>
+      <h1 class="title">Projects</h1>
+      <div class="section-container" style="display: flex; justify-content: center; align-items: center;">
+        <div class="details-container" style="min-width: 500px; max-width: 900px; padding: 20px;">
+          <img src="./assets/project1.png" alt="Project 1" class="project-img" />
+          <h3>Algorithm Tools</h3>
+          <p>Built using React.js, Node.js, phpMyAdmin, and designed with Figma.</p>
+          <p>A platform offering interactive algorithm visualizations and quizzes for learning BFS, DFS, Dijkstra’s and more</p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
