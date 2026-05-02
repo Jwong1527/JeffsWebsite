@@ -13,6 +13,10 @@ export default function Header(){
         <div>
           <motion.ul className="nav-links" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.1}}>
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Resume</a></li>
             <li><a href="#projects">Projects</a></li>
           </motion.ul>
         </div>
@@ -32,6 +36,10 @@ export default function Header(){
           </div>
           <motion.div className={`menu-links ${open ? 'open' : ''}`} initial={{opacity:0}} animate={{opacity: open ? 1 : 0}} transition={{duration:0.25}}>
             <a href="#about" onClick={()=>setOpen(false)}>About</a>
+            <a href="#experience" onClick={()=>setOpen(false)}>Experience</a>
+            <a href="#hobbies" onClick={()=>setOpen(false)}>Hobbies</a>
+            <a href="#skills" onClick={()=>setOpen(false)}>Skills</a>
+            <a href="#resume" onClick={()=>setOpen(false)}>Resume</a>
             <a href="#projects" onClick={()=>setOpen(false)}>Projects</a>
           </motion.div>
         </div>
