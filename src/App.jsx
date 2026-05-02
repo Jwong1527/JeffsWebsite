@@ -15,14 +15,14 @@ export default function App(){
   return (
     <ThemeProvider>
       <CustomCursor />
-        <Header />
+      <Header />
       <main>
         <Profile />
         <About />
         <Motivation />
         <Experience />
-        <Resume />
         <Projects />
+        <Resume />
         <Hobbies />
       </main>
       <Footer />

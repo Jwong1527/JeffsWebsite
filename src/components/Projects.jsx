@@ -21,15 +21,16 @@ const projects = [
   },
   {
     year: '2026',
-    type: 'Cryptography Demo',
-    title: 'Shor Algorithm Visualizer',
+    type: 'Cryptography Study',
+    title: 'RSA & Shor Algorithm Explorer',
     role: 'Developer',
     description: [
-      'A sample cryptography demo that illustrates RSA semiprime factorization with a simplified quantum-inspired flow.',
-      'Designed as a compact sample to build intuition for why RSA security depends on large prime factors and order-finding.'
+      'My work with security engineering, databases, and basic secure application flows made me want to understand the math behind encryption rather than treat it as a black box.',
+      'This project studies RSA from the ground up: prime factorization, public and private keys, and why modern systems rely on hard number theory problems to protect data.',
+      'The visual demo connects that foundation to Shor algorithm, showing why quantum computing changes the long-term security conversation around RSA and other encryption techniques.'
     ],
     demo: <ShorDemo />,
-    tags: ['Cryptography', 'RSA', 'Quantum', 'Visualization']
+    tags: ['RSA', 'Cryptography', 'Security Engineering', 'Quantum Computing']
   },
   {
     year: '2025',
@@ -44,14 +45,15 @@ const projects = [
       {
         type: 'pdf',
         src: './assets/Orange and Green Illustration Computer Science Presentation.pdf',
-        alt: 'Orange and green computer science project illustration',
-        label: 'Project Illustration'
+        preview: './assets/algorhythm-presentation.png',
+        alt: 'Algorhythm breadth-first search presentation preview',
+        label: 'BFS Project Overview'
       },
       {
         type: 'image',
-        src: './assets/dash.png',
-        alt: 'Algorithm Tools dashboard screenshot',
-        label: 'Dashboard'
+        src: './assets/project1.png',
+        alt: 'Algorhythm breadth-first search dashboard screenshot',
+        label: 'BFS Dashboard'
       },
       {
         type: 'image',
@@ -126,9 +128,9 @@ function ProjectCard({ year, type, title, role, description, demo, media, tags, 
               {media.map((item) => (
                 <figure key={item.src} className="project-media-item">
                   {item.type === 'pdf' ? (
-                    <object className="project-media-pdf" data={item.src} type="application/pdf" aria-label={item.alt}>
-                      <a className="project-link" href={item.src} target="_blank" rel="noreferrer">Open {item.label}</a>
-                    </object>
+                    <a className="project-media-link" href={item.src} target="_blank" rel="noreferrer" aria-label={`Open ${item.label}`}>
+                      <img src={item.preview} alt={item.alt} />
+                    </a>
                   ) : (
                     <img src={item.src} alt={item.alt} />
                   )}

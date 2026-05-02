@@ -26,7 +26,7 @@ const experiences = [
   {
     title: 'Mathematics Teacher',
     company: 'Logos Community Church',
-    timeframe: 'May 2026 - August 2026',
+    timeframe: '2023',
     location: 'New York',
     details: [
       'Tutored SAT math prep for a group of 15 students.',
